@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context=".MainActivity">
+
+    <TextureView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="870dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="92dp" />
+
+    <ImageButton
+        android:id="@+id/capture"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15sp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:keepScreenOn="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/round_camera_24"
+        app:tint="#000" />
+
+    <Spinner
+        android:id="@+id/exposure"
+        android:background="@color/white"
+        android:layout_width="60sp"
+        android:layout_height="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20sp"
+        android:layout_marginLeft="50sp"/>
+
+    <Spinner
+        android:id="@+id/iso"
+        android:background="@color/white"
+        android:layout_width="60sp"
+        android:layout_height="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20sp"
+        android:layout_marginRight="50sp" />
+
+    <TextView
+        android:id="@+id/editTextText"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/exposure"
+        android:layout_alignStart="@+id/exposure"
+        android:layout_marginStart="-2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@null"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Exposure" />
+
+    <TextView
+        android:id="@+id/editTextText2"
+        android:layout_width="95dp"
+        android:background="@null"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iso"
+        android:layout_alignStart="@+id/iso"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="iso" />
+
+</RelativeLayout>
